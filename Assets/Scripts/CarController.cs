@@ -9,7 +9,7 @@ public class CarController : MonoBehaviour
 
     [Header("Car Attributes")]
     [Range(0,20f)] public float forwardAccel = 8f; 
-    [Range(0,20f)] public float reverseAccel = 4f;
+    [Range(0,20f)] public float reverseAccel = 0f;
     [Range(0,100f)] public float maxSpeed = 50f;
     [Range(0,360f)] public float turnStrength = 180f;
     [Range(0,60f)] public float jumpHeight = 30f;
