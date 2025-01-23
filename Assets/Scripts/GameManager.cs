@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
     {
         Collectables();
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
         timerText.text = timer.ToString("F2");
 
         if (timer <= 0)
