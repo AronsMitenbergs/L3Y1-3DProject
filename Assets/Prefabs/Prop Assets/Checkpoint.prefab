@@ -37,6 +37,7 @@ Transform:
   m_Children:
   - {fileID: 683940145216281257}
   - {fileID: 7265439722834465529}
+  - {fileID: 1300044469552875576}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &2030177148139652385
@@ -11589,7 +11590,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1537
+  m_VersionIndex: 1579
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -11748,11 +11749,10 @@ Transform:
   m_GameObject: {fileID: 3567517938166372384}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 1.78, y: -0.02, z: -2.41}
-  m_LocalScale: {x: 1.0100062, y: 1, z: 1}
+  m_LocalPosition: {x: 1.7799991, y: -0.020000696, z: -2.410001}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1300044469552875576}
+  m_Children: []
   m_Father: {fileID: 9111234390488005633}
   m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!198 &1795454598168759252
@@ -12592,7 +12592,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 20
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -15541,9 +15541,9 @@ ParticleSystem:
       properties: 0
       emitProbability: 1
   LightsModule:
-    enabled: 0
-    ratio: 0
-    light: {fileID: 0}
+    enabled: 1
+    ratio: 1
+    light: {fileID: 9105191880337076361}
     randomDistribution: 1
     color: 1
     range: 1
@@ -15551,7 +15551,7 @@ ParticleSystem:
     rangeCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 100
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -15654,7 +15654,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    maxLights: 20
+    maxLights: 1000
   TrailModule:
     enabled: 0
     mode: 0
@@ -16578,12 +16578,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6482672657234991854}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0, w: -1}
-  m_LocalPosition: {x: -6.873909, y: -1.3385835, z: -0.63912845}
-  m_LocalScale: {x: 0.7052683, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -5.162691, y: 8.85, z: -11.78}
+  m_LocalScale: {x: 0.7123254, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 683940145216281257}
+  m_Father: {fileID: 9111234390488005633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &9105191880337076361
 Light:
@@ -16596,20 +16596,20 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.3504673, b: 0, a: 1}
-  m_Intensity: 5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.2
   m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 1.05
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -16642,7 +16642,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 5.8e-43, y: 3.6e-43, z: 1.02e-43, w: 1.3e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -16696,9 +16696,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6557634966084828705}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.78, y: 0.22, z: -2.5}
-  m_LocalScale: {x: 2.1978214, y: 2.1978214, z: 2.1978214}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.7799991, y: 0.22000098, z: -2.5000007}
+  m_LocalScale: {x: 2.1978216, y: 2.1978214, z: 2.1978214}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9111234390488005633}
@@ -17274,7 +17274,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 80000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -17540,7 +17540,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 75
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
